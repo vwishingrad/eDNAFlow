@@ -248,7 +248,7 @@ class helper {
 
     Denoising and zOTU inference:  
       --denoiser [tool/path]        Sets the tool used for denoising & chimera removal
-                                    accepted options: usearch/usearch32 (equivalent), vsearch, 
+                                    accepted options: usearch (64-bit), vsearch, 
                                     path to usearch64 executable (default: vsearch)
       --alpha [num]                 Sets the alpha parameter for the UNOISE3 algorithm (default: ${params.alpha})
       --min-abundance [num]         Minimum sequence abundance for zOTU determination; sequences below threshold will be discarded

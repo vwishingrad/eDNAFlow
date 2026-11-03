@@ -108,8 +108,8 @@ def check_params() {
   // if denoiser is an executable, treat it as such
   // otherwise check to make sure it's a valid input
   if (!params.execDenoiser) {
-    if (!(params.denoiser in ['usearch','usearch32','vsearch'])) {
-      println(colors.bred("--denoiser") + colors.red(" must be either 'usearch', 'usearch32', 'vsearch', or a path to an executable (e.g., /opt/sw/bin/usearch64)"))
+    if (!(params.denoiser in ['usearch','vsearch'])) {
+      println(colors.bred("--denoiser") + colors.red(" must be either 'usearch' or 'vsearch', or a path to an executable (e.g., /opt/sw/bin/usearch64)"))
       exit(1)
     }
   }
